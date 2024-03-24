@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 export default function Search() {
   return (
-    <div className="min-h-svh bg-background">
+    <div className="min-h-svh flex flex-col items-center bg-background">
       <Header />
       <Footer />
     </div>
