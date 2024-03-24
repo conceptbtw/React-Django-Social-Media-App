@@ -9,15 +9,15 @@ import {
 
 export default function Header() {
   return (
-    <header className="p-2 flex justify-center items-center">
+    <header className="p-4 flex justify-center items-center text-white">
       <nav className="flex justify-center items-center">
-        <ul className="flex justify-center items-center gap-2">
-          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 text-3xl text-white hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
+        <ul className="flex justify-center items-center gap-4 text-3xl">
+          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
             <Link className="px-8 py-4" to="/">
               <FaHouse />
             </Link>
           </li>
-          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 text-3xl text-white hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
+          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
             <Link
               className="px-8 py-4 flex justify-center items-center rounded-xl"
               to="/search"
@@ -25,7 +25,7 @@ export default function Header() {
               <FaMagnifyingGlass />
             </Link>
           </li>
-          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 text-3xl text-white hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
+          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
             <Link
               className="px-8 py-4 flex justify-center items-center rounded-xl"
               to="/post"
@@ -33,7 +33,7 @@ export default function Header() {
               <FaPen />
             </Link>
           </li>
-          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 text-3xl text-white hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
+          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250">
             <Link
               className="px-8 py-4 flex justify-center items-center rounded-xl"
               to="/notifications"
@@ -41,7 +41,7 @@ export default function Header() {
               <FaBell />
             </Link>
           </li>
-          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 text-3xl text-white hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250 ">
+          <li className="flex justify-center items-center rounded-xl bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-90 transition-all ease-in-out duration-250 ">
             <Link
               className="px-8 py-4 flex justify-center items-center rounded-xl"
               to="/profile"
