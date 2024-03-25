@@ -77,7 +77,7 @@ export default function ProfileSection() {
           <Link className="hover:underline">{profileFollowing} following</Link>
         </div>
         <div className="w-full">
-          <Link className="p-2 flex justify-center items-center border border-white border-opacity-50 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+          <Link className="p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
             Edit profile
           </Link>
         </div>
