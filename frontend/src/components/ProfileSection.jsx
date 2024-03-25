@@ -9,17 +9,27 @@ import {
 import { Link } from "react-router-dom";
 
 export default function ProfileSection() {
+  const firstName = "Illia";
+  const lastName = "Movchko";
+  const username = "@conceptbtw";
+  const profilePicture = "/src/assets/images/profile.png";
+  const profileBio = "Frontend Developer (React) from Lviv, Ukraine";
+  const profileFollowers = 100;
+  const profileFollowing = 100;
+
   return (
     <section className="pb-4 w-full flex flex-col justify-center items-center gap-4 border-b border-white border-opacity-10">
       <div className="w-full flex justify-between items-center">
         <div className="flex flex-col">
-          <span className="text-xl font-bold">Illia Movchko</span>
-          <span className="">@conceptbtw</span>
+          <span className="text-xl font-bold">
+            {firstName} {lastName}
+          </span>
+          <span className="">{username}</span>
         </div>
         <div className="flex justify-center items-center">
           <img
             className="w-24 h-24 border rounded-full"
-            src="/src/assets/images/profile.png"
+            src={profilePicture}
             alt=""
           ></img>
         </div>
@@ -60,13 +70,11 @@ export default function ProfileSection() {
           </ul>
         </div>
         <div className="flex">
-          <span className="">
-            Frontend Developer (React) from Lviv, Ukraine
-          </span>
+          <span className="">{profileBio}</span>
         </div>
         <div className="w-full flex gap-4">
-          <Link className="hover:underline">100 followers</Link>
-          <Link className="hover:underline">100 following</Link>
+          <Link className="hover:underline">{profileFollowers} followers</Link>
+          <Link className="hover:underline">{profileFollowing} following</Link>
         </div>
         <div className="w-full">
           <Link className="p-2 flex justify-center items-center border border-white border-opacity-50 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
