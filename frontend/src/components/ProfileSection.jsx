@@ -9,6 +9,8 @@ export default function ProfileSection() {
   const bio = "Frontend Developer (React) from Lviv, Ukraine";
   const followers = 100;
   const following = 100;
+  const isMyProfile = true;
+  const isFollowing = false;
 
   return (
     <section className="pb-4 w-full flex flex-col justify-center items-center gap-4 border-b border-white border-opacity-10">
@@ -39,9 +41,23 @@ export default function ProfileSection() {
           <Link className="hover:underline">{following} following</Link>
         </div>
         <div className="w-full">
-          <Link className="p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
-            Edit profile
-          </Link>
+          {isMyProfile ? (
+            <Link className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+              Edit profile
+            </Link>
+          ) : (
+            <>
+              {isFollowing ? (
+                <button className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+                  Unfollow
+                </button>
+              ) : (
+                <button className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+                  Follow
+                </button>
+              )}
+            </>
+          )}
         </div>
       </div>
     </section>
