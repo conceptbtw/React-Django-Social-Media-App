@@ -1,10 +1,10 @@
-export default function NotificationItem() {
+export default function NotificationItem({ data }) {
   const firstName = "Maksym";
   const lastName = "Skladan";
   const username = "@mxxnly";
   const profilePicture = "/src/assets/images/mxxnly.jpg";
-  const notificationTime = "10 min";
-  const notificationText = "Started following you";
+  const time = "10 min";
+  const text = "Started following you";
 
   return (
     <li className="py-4 w-full flex items-center gap-2 border-b border-white border-opacity-10">
@@ -22,11 +22,11 @@ export default function NotificationItem() {
             <span className="opacity-50">{username}</span>
           </div>
           <div className="flex justify-center items-center">
-            <span className="opacity-50">{notificationTime}</span>
+            <span className="opacity-50">{time}</span>
           </div>
         </div>
         <div className="flex">
-          <span className="">{notificationText}</span>
+          <span className="">{text}</span>
         </div>
       </div>
     </li>

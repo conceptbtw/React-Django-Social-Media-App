@@ -1,15 +1,13 @@
-import { FaHeart, FaMessage } from "react-icons/fa6";
-
-export default function PostItem() {
+export default function PostItem({ data }) {
   const firstName = "Illia";
   const lastName = "Movchko";
   const username = "@conceptbtw";
   const profilePicture = "/src/assets/images/profile.png";
-  const postTime = "10 min";
-  const postText = "Frontend Developer (React) from Lviv, Ukraine";
-  const postImage = "/src/assets/images/profile.png";
-  const postLikes = 100;
-  const postComments = 100;
+  const time = "10 min";
+  const text = "Frontend Developer (React) from Lviv, Ukraine";
+  const image = "/src/assets/images/profile.png";
+  const likes = 100;
+  const comments = 100;
 
   return (
     <li className="py-4 w-full flex flex-col gap-4 border-b border-white border-opacity-10">
@@ -24,26 +22,26 @@ export default function PostItem() {
         </span>
         <span className="opacity-50">{username}</span>
         <span className="opacity-50">·</span>
-        <span className="opacity-50">{postTime}</span>
+        <span className="opacity-50">{time}</span>
       </div>
       <div className="px-4 flex">
-        <span className="">{postText}</span>
+        <span className="">{text}</span>
       </div>
       <div className="px-4 flex">
-        <img className="rounded-xl" src={postImage} alt=""></img>
+        <img className="rounded-xl" src={image} alt=""></img>
       </div>
       <div className="px-4 flex items-center gap-4">
         <div className="flex justify-center items-center gap-2">
           <button className="text-xl">
-            <FaHeart />
+            <i className="fa-solid fa-heart"></i>
           </button>
-          <span className="">{postLikes}</span>
+          <span className="">{likes}</span>
         </div>
         <div className="flex justify-center items-center gap-2">
           <button className="text-xl">
-            <FaMessage />
+            <i className="fa-solid fa-message"></i>
           </button>
-          <span className="">{postComments}</span>
+          <span className="">{comments}</span>
         </div>
       </div>
     </li>
