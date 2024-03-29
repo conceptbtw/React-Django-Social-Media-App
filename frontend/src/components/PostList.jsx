@@ -28,7 +28,6 @@ export default function PostList() {
       {data.map((item) => (
         <PostItem key={item.id} data={item} />
       ))}
-      <PostItem />
     </ul>
   );
 }

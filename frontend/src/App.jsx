@@ -5,6 +5,7 @@ import Search from "./pages/Search";
 import Post from "./pages/Post";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import Edit from "./pages/Edit";
 
 export default function App() {
   const isLoggedIn = true;
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/post" element={<Post />}></Route>
         <Route path="/notifications" element={<Notifications />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/edit" element={<Edit />}></Route>
       </Routes>
     </BrowserRouter>
   );

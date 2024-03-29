@@ -25,7 +25,7 @@ export default function ProfileSection() {
           <img
             className="w-24 h-24 border rounded-full"
             src={profilePicture}
-            alt=""
+            alt="Profile Picture"
           ></img>
         </div>
       </div>
@@ -42,7 +42,10 @@ export default function ProfileSection() {
         </div>
         <div className="w-full">
           {isMyProfile ? (
-            <Link className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+            <Link
+              to="/edit"
+              className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250"
+            >
               Edit profile
             </Link>
           ) : (
