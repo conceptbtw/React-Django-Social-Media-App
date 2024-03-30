@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -8,9 +9,10 @@ import Profile from "./pages/Profile";
 import Edit from "./pages/Edit";
 
 export default function App() {
-  const isLoggedIn = true;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   if (!isLoggedIn) {
-    return <Login />;
+    return <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />;
   }
 
   return (
