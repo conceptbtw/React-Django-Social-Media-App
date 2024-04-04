@@ -4,6 +4,7 @@ export default function SearchForm() {
       <i className="fa-solid fa-magnifying-glass opacity-50"></i>
       <input
         className="w-full flex justify-center items-center bg-transparent outline-none placeholder:text-white placeholder:opacity-50"
+        id="search"
         placeholder="Search"
         type="text"
       ></input>

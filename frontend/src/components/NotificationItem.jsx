@@ -11,7 +11,7 @@ export default function NotificationItem({ data }) {
       <img
         className="w-12 h-12 border rounded-full"
         src={profilePicture}
-        alt=""
+        alt="Profile Picture"
       ></img>
       <div className="w-full flex flex-col">
         <div className="w-full flex justify-between items-center gap-2">

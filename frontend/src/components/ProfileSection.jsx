@@ -51,11 +51,17 @@ export default function ProfileSection() {
           ) : (
             <>
               {isFollowing ? (
-                <button className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+                <button
+                  className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250"
+                  aria-label="unfollow"
+                >
                   Unfollow
                 </button>
               ) : (
-                <button className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250">
+                <button
+                  className="w-full p-2 flex justify-center items-center border border-white border-opacity-10 rounded bg-white bg-opacity-0 hover:bg-opacity-10 active:scale-95 transition-all ease-in-out duration-250"
+                  aria-label="follow"
+                >
                   Follow
                 </button>
               )}

@@ -15,7 +15,7 @@ export default function PostItem({ data }) {
         <img
           className="w-8 h-8 border rounded-full"
           src={profilePicture}
-          alt=""
+          alt="Profile Picture"
         ></img>
         <span className="font-bold">
           {firstName} {lastName}
