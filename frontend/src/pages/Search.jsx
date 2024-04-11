@@ -1,13 +1,11 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import MainSearch from "../components/MainSearch";
+import SearchForm from "../components/SearchForm";
+import SearchList from "../components/SearchList";
 
 export default function Search() {
   return (
-    <div className="min-h-svh flex flex-col items-center bg-background">
-      <Header />
-      <MainSearch />
-      <Footer />
-    </div>
+    <main className="w-full max-w-screen-sm p-4 flex flex-1 flex-col items-center gap-4 text-white">
+      <SearchForm />
+      <SearchList />
+    </main>
   );
 }

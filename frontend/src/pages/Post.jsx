@@ -1,13 +1,9 @@
-import Header from "../components/Header";
-import MainPost from "../components/MainPost";
-import Footer from "../components/Footer";
+import PostForm from "../components/PostForm";
 
 export default function Post() {
   return (
-    <div className="min-h-svh flex flex-col items-center bg-background">
-      <Header />
-      <MainPost />
-      <Footer />
-    </div>
+    <main className="w-full max-w-screen-sm p-4 flex flex-1 flex-col items-center text-white">
+      <PostForm />
+    </main>
   );
 }

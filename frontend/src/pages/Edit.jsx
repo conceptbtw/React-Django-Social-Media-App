@@ -1,13 +1,9 @@
-import Header from "../components/Header";
-import MainEdit from "../components/MainEdit";
-import Footer from "../components/Footer";
+import EditForm from "../components/EditForm";
 
 export default function Edit() {
   return (
-    <div className="min-h-svh flex flex-col items-center bg-background">
-      <Header />
-      <MainEdit />
-      <Footer />
-    </div>
+    <main className="w-full max-w-screen-sm p-4 flex flex-1 flex-col items-center text-white">
+      <EditForm />
+    </main>
   );
 }

@@ -1,13 +1,11 @@
-import Header from "../components/Header";
-import MainProfile from "../components/MainProfile";
-import Footer from "../components/Footer";
+import ProfileSection from "../components/ProfileSection";
+import PostList from "../components/PostList";
 
 export default function Profile() {
   return (
-    <div className="min-h-svh flex flex-col items-center bg-background">
-      <Header />
-      <MainProfile />
-      <Footer />
-    </div>
+    <main className="w-full max-w-screen-sm p-4 flex flex-1 flex-col items-center text-white">
+      <ProfileSection />
+      <PostList />
+    </main>
   );
 }
